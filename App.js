@@ -3,6 +3,10 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native'
 import 'react-native-gesture-handler';
+import * as SplashScreen from 'expo-splash-screen';
+
+SplashScreen.preventAutoHideAsync();
+setTimeout(SplashScreen.hideAsync, 2000);
 
 function ChicagoScreen(){
   return(
